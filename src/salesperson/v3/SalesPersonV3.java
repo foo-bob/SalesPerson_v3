@@ -11,10 +11,6 @@
  */
 
 package salesperson.v3;
- // Code Source: GasController.java, Author: Paul Stay, Date: 21 July 2016 */
-import java.util.Scanner; // Required to collect user keyboard input.
-//*/ import salesperson.v3.AnnualCalc;
-
 
 public class SalesPersonV3 {
     
@@ -22,14 +18,18 @@ public class SalesPersonV3 {
     public static void main(String[] args) {
        
        Compare salesCompare = new Compare(); // Declare new object to access needed methods
+       
         
        System.out.println("Welcome to the sales comparrision tool.");
-       System.out.println("You will be prompted to enter the first name of each salesperson,");
-       System.out.println("followed by a prompt for their sales total.");
-       System.out.println("Use the first name \"end\" to stop.");
+       System.out.println("=======================================\n");
+       System.out.println("Enter salesperson's name and annual sales total");
+       System.out.println("Type \"last\" to finish input.");
        
        salesCompare.getData(); // Call method to collect Salesperson Name and Annual Sales values from user
        
+       salesCompare.findHighest(); // Call method to find higest value
+       
+       salesCompare.displayTable(); // Call method to display table of sales and differences
               
        System.out.println("\n" + "END PROGRAM!");
 
