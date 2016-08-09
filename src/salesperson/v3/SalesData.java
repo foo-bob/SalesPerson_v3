@@ -8,8 +8,8 @@
 package salesperson.v3;
 
 /**
- *
  * @author Bob Kefurt
+ * Date: 08 Aug. 2016
  */
 public class SalesData  {
     

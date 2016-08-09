@@ -6,7 +6,7 @@
  * 
  * 
  * @author Bob Kefurt
- * Date: DAY Aug 2016
+ * Date: 08 Aug 2016
  * 
  */
 
@@ -14,22 +14,26 @@ package salesperson.v3;
 
 public class SalesPersonV3 {
     
-    // Main class entry point
+    // Program entry point
     public static void main(String[] args) {
        
-       Compare salesCompare = new Compare(); // Declare new object to access needed methods
+        /* Work object for sales value calcuations */
+       Compare salesCompare = new Compare();
        
-        
+       /* Program Header and user prompt */
        System.out.println("Welcome to the sales comparrision tool.");
        System.out.println("=======================================\n");
        System.out.println("Enter salesperson's name and annual sales total");
        System.out.println("Type \"last\" to finish input.");
        
-       salesCompare.getData(); // Call method to collect Salesperson Name and Annual Sales values from user
+       /* MEthod call to collect data from user */
+       salesCompare.getData();
        
-       salesCompare.findHighest(); // Call method to find higest value
+       /* Method call to find the higest value for ues in comparison process */
+       salesCompare.findHighest();
        
-       salesCompare.displayTable(); // Call method to display table of sales and differences
+       /* Method call to display results of comparison */
+       salesCompare.displayTable();
               
        System.out.println("\n" + "END PROGRAM!");
 
